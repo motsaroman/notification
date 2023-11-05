@@ -12,7 +12,6 @@ function App() {
   const timeoutRef = useRef(null);
 
   const handleServerStart = () => {
-    console.log('click')
     simulateServer()
       .then(() => {
         setNotification({ status: 'success', label: 'Успешно', text: 'Изменения успешно сохранены' });
